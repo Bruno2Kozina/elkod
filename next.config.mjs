@@ -1,8 +1,4 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-	images: {
-		domains: ['images.ctfassets.net'] // Add Contentful's image domain
-	}
-}
+const nextConfig = {};
 
-export default nextConfig
+export default nextConfig;

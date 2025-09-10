@@ -1,8 +1,11 @@
 import {
+	BottomWrapper,
+	Button,
 	ContactSingleInfo,
 	Container,
 	FooterContainer,
 	Header,
+	MobileButton,
 	Nav,
 	NavItem,
 	NavItemMobile,
@@ -12,28 +15,18 @@ import {
 } from './Navbar.style'
 import Image from 'next/image'
 import Link from 'next/link'
-import logo from 'public/images/KPlogo.png'
+import logo from 'public/icons/logo.svg'
 import { usePathname } from 'next/navigation'
 import { useScreenSize } from 'hooks'
 import { ArrowRightIcon, CloseIcon, HamburgerMenuIcon, MailIcon } from 'icons'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
+import linkedInIcon from 'public/icons/LinkedIn.svg'
+import euLogo from 'public/icons/euLogo.svg'
 
 export default function Navbar() {
 	const path = usePathname()
 	const { width } = useScreenSize()
 	const [isMenuOpen, setIsMenuOpen] = useState(false)
-
-	useEffect(() => {
-		if (isMenuOpen) {
-			document.body.style.overflow = 'hidden' // Disable scroll
-		} else {
-			document.body.style.overflow = 'auto' // Enable scroll
-		}
-
-		return () => {
-			document.body.style.overflow = 'auto' // Cleanup when component unmounts
-		}
-	}, [isMenuOpen])
 
 	const toggleMenu = () => {
 		setIsMenuOpen(!isMenuOpen)
@@ -44,28 +37,25 @@ export default function Navbar() {
 			<Header>
 				{width && width > 1024 && (
 					<Link href="/" onClick={() => setIsMenuOpen(false)} style={{ height: '32px' }}>
-						<Image src={logo} alt="Logo" width={180} height={46} />
+						<Image src={logo} alt="Logo" />
 					</Link>
 				)}
 				{width && width <= 1024 && (
 					<Link href="/" onClick={() => setIsMenuOpen(false)}>
-						<Image src={logo} alt="Logo" width={160} height={41} />
+						<Image src={logo} alt="Logo" width={98} height={20} />
 					</Link>
 				)}
 				{width && width > 1024 && (
 					<Nav>
-						<NavItem active={path === '/'}>
-							<Link href="/">Naslovna</Link>
+						<NavItem active={path === '/services'}>
+							<Link href="/services">Services</Link>
 						</NavItem>
-						<NavItem active={path === '/aboutUs'}>
-							<Link href="/aboutUs">O nama</Link>
+						<NavItem active={path === '/approach'}>
+							<Link href="/approach">Approach</Link>
 						</NavItem>
-						<NavItem active={path === '/references'}>
-							<Link href="/references">Reference</Link>
-						</NavItem>
-						<NavItem active={path === '/contact'}>
-							<Link href="/contact">Kontakt</Link>
-						</NavItem>
+						<Link href="https://calendly.com/nikola-bmbz/30min" target="_blank">
+							<Button>Book a call</Button>
+						</Link>
 					</Nav>
 				)}
 				{width && width <= 1024 && (
@@ -81,34 +71,41 @@ export default function Navbar() {
 						<NavMobile>
 							<Link href="/">
 								<NavItemMobile onClick={toggleMenu}>
-									<span>Naslovna</span>
+									<span>Home</span>
 									<ArrowRightIcon />
 								</NavItemMobile>
 							</Link>
-							<Link href="/aboutUs">
+							<Link href="/services">
 								<NavItemMobile onClick={toggleMenu}>
-									<span>O nama</span>
+									<span>Services</span>
 									<ArrowRightIcon />
 								</NavItemMobile>
 							</Link>
-							<Link href="/references">
-								<NavItemMobile onClick={toggleMenu}>
-									<span>Reference</span>
-									<ArrowRightIcon />
-								</NavItemMobile>
-							</Link>
-							<Link href="/contact">
+							<Link href="/approach">
 								<NavItemMobile onClick={toggleMenu} style={{ border: 'unset' }}>
-									<span>Kontakt</span>
+									<span>Approach</span>
 									<ArrowRightIcon />
 								</NavItemMobile>
+							</Link>
+							<Link href="https://calendly.com/nikola-bmbz/30min" target="_blank">
+								<MobileButton>Book a call</MobileButton>
 							</Link>
 						</NavMobile>
 						<FooterContainer>
 							<ContactSingleInfo>
 								<MailIcon />
-								<p>kozinaprojekti@kozinaprojekti.hr</p>
+								<p>hello@readyscale.co</p>
 							</ContactSingleInfo>
+							<BottomWrapper>
+								<ContactSingleInfo>
+									<Image src={linkedInIcon} alt="LinkedInIcon" />
+									<p>ReadyScale</p>
+								</ContactSingleInfo>
+								<ContactSingleInfo>
+									<Image src={euLogo} alt="euLogo" />
+									<p>EU based</p>
+								</ContactSingleInfo>
+							</BottomWrapper>
 						</FooterContainer>
 					</Wrapper>
 				</NavMobileContainer>

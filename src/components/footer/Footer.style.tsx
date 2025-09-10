@@ -4,7 +4,7 @@ import { devices } from 'parameters/general'
 export const MainContainer = styled.div`
 	display: flex;
 	justify-content: center;
-	background-color: #fff;
+	background-color: #f2efe9;
 `
 
 export const ContentContainer = styled.div`
@@ -12,7 +12,7 @@ export const ContentContainer = styled.div`
 	display: flex;
 	flex-direction: column;
 	gap: 40px;
-	background-color: #fff;
+	background-color: #f2efe9;
 	max-width: 1440px;
 	@media ${devices.laptop} {
 		gap: unset;
@@ -31,9 +31,6 @@ export const Wrapper = styled.div`
 	display: flex;
 	justify-content: space-between;
 	width: 100%;
-	color: #196b7b;
-	font-size: 14px;
-	letter-spacing: 2px;
 
 	@media ${devices.laptop} {
 		flex-direction: column;
@@ -41,6 +38,9 @@ export const Wrapper = styled.div`
 	}
 `
 
+export const LeftSection = styled.div`
+	width: 50%;
+`
 export const RightSection = styled.div`
 	display: flex;
 	gap: 64px;
@@ -58,6 +58,12 @@ export const RightBox = styled.div`
 	}
 `
 
+export const ContactSingleInfo = styled.div`
+	display: flex;
+	align-items: center;
+	gap: 8px;
+`
+
 export const BoxWrapper = styled.div`
 	display: flex;
 	flex-direction: column;
@@ -66,14 +72,12 @@ export const BoxWrapper = styled.div`
 
 export const Separator = styled.span`
 	height: 1px;
-	background-color: #dae8ea;
+	background-color: black;
 `
 
 export const BottomFooter = styled.div`
 	display: flex;
 	padding: 0 164px 40px;
-	color: #196b7b;
-	font-size: 14px;
 	@media ${devices.laptop} {
 		padding: 40px 24px 64px;
 	}

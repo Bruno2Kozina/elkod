@@ -1,38 +1,65 @@
-import { Container, RightSection, Wrapper, RightBox, BoxWrapper, MainContainer, Separator, BottomFooter, ContentContainer } from './Footer.style'
+import {
+	Container,
+	LeftSection,
+	RightSection,
+	Wrapper,
+	RightBox,
+	ContactSingleInfo,
+	BoxWrapper,
+	MainContainer,
+	Separator,
+	BottomFooter,
+	ContentContainer
+} from './Footer.style'
 import Image from 'next/image'
-import logoAlt from 'public/images/KPlogoAlt.png'
-import { useScreenSize } from 'hooks'
+import euLogo from 'public/icons/euLogo.svg'
+import Link from 'next/link'
+import { LinkedInIcon, LogoBlack, MailIcon } from 'icons'
 
 export default function Footer() {
-	const { width } = useScreenSize()
-
 	return (
 		<MainContainer>
 			<ContentContainer>
 				<Container>
 					<Wrapper>
-						<div>
-							{width && width > 1024 && <Image src={logoAlt} alt="Logo" width={192} height={96} />}
-							{width && width <= 1024 && <Image src={logoAlt} alt="Logo" width={160} height={75} />}
-						</div>
+						<LeftSection>
+							<LogoBlack />
+						</LeftSection>
 						<RightSection>
 							<RightBox>
+								<h6>Address</h6>
 								<BoxWrapper>
-									<p style={{ fontWeight: 600 }}>KOZINA PROJEKTI d.o.o.</p>
-									<p>Vinkovačka 21 </p>
-									<p>Ured {'(Domovinskog rata 104c)'} </p>
-									<p>21000 Split</p>
-									<p>OIB: 34862845293</p>
-									<p>MBS: 060185473</p>
+									<p>Gajnice 5, 10 000 Zagreb</p>
+									<ContactSingleInfo>
+										<Image src={euLogo} alt="euLogo" />
+										<p>EU based</p>
+									</ContactSingleInfo>
 								</BoxWrapper>
 							</RightBox>
 							<RightBox>
+								<h6>Contact</h6>
 								<BoxWrapper>
-									<p>Žiro račun: IBAN: HR2824070001100575905</p>
-									<p>Otvoren kod OTP banka Hrvatska d.d.</p>
-									<p>Trgovački sud u Splitu</p>
-									<p>član uprave: Boško Kozina</p>
-									<p>temeljni kapital 2,654€ uplaćen u cijelosti</p>
+									<ContactSingleInfo>
+										<div style={{ width: '24px', height: '24px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+											<MailIcon />
+										</div>
+										<p>hello@readyscale.co</p>
+									</ContactSingleInfo>
+									{/* <ContactSingleInfo>
+										<Image src={phoneCallIcon} alt="PhoneCall icon" />
+										<p>(270) 555-0117</p>
+									</ContactSingleInfo> */}
+									<Link
+										href="https://www.linkedin.com/company/readyscale"
+										style={{ textDecoration: 'none', color: '#141313', cursor: 'pointer' }}
+										target="_blank">
+										<ContactSingleInfo>
+											<div style={{ width: '24px', height: '24px' }}>
+												<LinkedInIcon />
+											</div>
+											<p>ReadyScale</p>
+										</ContactSingleInfo>
+									</Link>
 								</BoxWrapper>
 							</RightBox>
 						</RightSection>
@@ -40,7 +67,7 @@ export default function Footer() {
 				</Container>
 				<Separator />
 				<BottomFooter>
-					<p>Copyright © 2025 KOZINA PROJEKTI</p>
+					<p>©2024, All rights reserved.</p>
 				</BottomFooter>
 			</ContentContainer>
 		</MainContainer>

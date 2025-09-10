@@ -2,12 +2,13 @@ import styled from '@emotion/styled'
 import { devices } from 'parameters/general'
 
 export const Container = styled.div<{ hasBorder: boolean }>`
-	position: absolute;
+	position: fixed;
 	display: flex;
 	justify-content: center;
-	background-color: transparent;
+	background-color: #141313;
 	width: 100%;
-	z-index: 1000;
+	z-index: 100000;
+	border-bottom: ${({ hasBorder }) => (hasBorder ? ' 1px solid #fff' : 'none')};
 `
 
 export const Header = styled.header`
@@ -21,31 +22,28 @@ export const Header = styled.header`
 	color: #fff;
 	font-size: 16px;
 	max-width: 1440px;
-	height: 80px;
 
 	@media ${devices.laptop} {
+		height: 56px;
 		padding: 16px 24px;
 		a {
-			height: 40px;
+			height: 20px;
 		}
 	}
 `
 
 export const Nav = styled.ul`
 	display: flex;
-	gap: 36px;
+	gap: 56px;
 `
 
 export const NavItem = styled.li<{ active?: boolean }>`
 	display: flex;
 	align-items: center;
 	a {
-		text-decoration: none;
-		color: ${({ active }) => (active ? '#FFF' : '#A2B5BF')};
-
-		&:hover {
-			color: #fff;
-		}
+		text-decoration: ${({ active }) => (active ? 'underscore' : 'none')};
+		font-weight: ${({ active }) => (active ? '700' : '500')};
+		color: #fff;
 	}
 `
 
@@ -84,10 +82,7 @@ export const Button = styled.button`
 		bottom: 2px;
 		right: 2px;
 		transform: rotate(270deg);
-		transition:
-			right 0.3s ease-in-out,
-			bottom 0.3s ease-in-out,
-			border-color 0.3s ease-in-out; /* Smooth transition for right, bottom, and border-color properties */
+		transition: right 0.3s ease-in-out, bottom 0.3s ease-in-out, border-color 0.3s ease-in-out; /* Smooth transition for right, bottom, and border-color properties */
 	}
 
 	&:hover::after {
@@ -116,9 +111,9 @@ export const Button = styled.button`
 `
 
 export const NavMobileContainer = styled.div<{ open: boolean }>`
-	background-color: #fff;
+	background-color: #eeebe5;
 	position: absolute;
-	top: 80px;
+	top: 56px;
 	height: calc(100vh - 56px);
 	width: 100%;
 	padding: 40px 32px;
@@ -130,6 +125,7 @@ export const NavMobile = styled.div`
 	align-items: center;
 	gap: 24px;
 	width: 100%;
+
 	a {
 		width: 100%;
 		text-decoration: none;
