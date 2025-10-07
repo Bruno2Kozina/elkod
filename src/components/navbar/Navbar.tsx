@@ -1,11 +1,9 @@
 import {
 	BottomWrapper,
-	Button,
 	ContactSingleInfo,
 	Container,
 	FooterContainer,
 	Header,
-	MobileButton,
 	Nav,
 	NavItem,
 	NavItemMobile,
@@ -31,31 +29,33 @@ export default function Navbar() {
 	const toggleMenu = () => {
 		setIsMenuOpen(!isMenuOpen)
 	}
-	const hasBorder = width && width > 1024
 	return (
-		<Container hasBorder={hasBorder || false}>
+		<Container>
 			<Header>
 				{width && width > 1024 && (
 					<Link href="/" onClick={() => setIsMenuOpen(false)} style={{ height: '32px' }}>
-						<Image src={logo} alt="Logo" />
+						<span>ELKOD</span>
 					</Link>
 				)}
 				{width && width <= 1024 && (
 					<Link href="/" onClick={() => setIsMenuOpen(false)}>
-						<Image src={logo} alt="Logo" width={98} height={20} />
+						<span>ELKOD</span>
 					</Link>
 				)}
 				{width && width > 1024 && (
 					<Nav>
-						<NavItem active={path === '/services'}>
-							<Link href="/services">Services</Link>
+						<NavItem active={path === '/'}>
+							<Link href="/">Naslovna</Link>
 						</NavItem>
-						<NavItem active={path === '/approach'}>
-							<Link href="/approach">Approach</Link>
+						<NavItem active={path === '/reference'}>
+							<Link href="/reference">Reference</Link>
 						</NavItem>
-						<Link href="https://calendly.com/nikola-bmbz/30min" target="_blank">
-							<Button>Book a call</Button>
-						</Link>
+						<NavItem active={path === '/oNama'}>
+							<Link href="/oNama">O nama</Link>
+						</NavItem>
+						<NavItem active={path === '/kontakt'}>
+							<Link href="/kontakt">Kontakt</Link>
+						</NavItem>
 					</Nav>
 				)}
 				{width && width <= 1024 && (
@@ -75,31 +75,34 @@ export default function Navbar() {
 									<ArrowRightIcon />
 								</NavItemMobile>
 							</Link>
-							<Link href="/services">
+							<Link href="/reference">
 								<NavItemMobile onClick={toggleMenu}>
-									<span>Services</span>
+									<span>Reference</span>
 									<ArrowRightIcon />
 								</NavItemMobile>
 							</Link>
-							<Link href="/approach">
+							<Link href="/oNama">
+								<NavItemMobile onClick={toggleMenu}>
+									<span>O nama</span>
+									<ArrowRightIcon />
+								</NavItemMobile>
+							</Link>
+							<Link href="/kontakt">
 								<NavItemMobile onClick={toggleMenu} style={{ border: 'unset' }}>
-									<span>Approach</span>
+									<span>Kontakt</span>
 									<ArrowRightIcon />
 								</NavItemMobile>
-							</Link>
-							<Link href="https://calendly.com/nikola-bmbz/30min" target="_blank">
-								<MobileButton>Book a call</MobileButton>
 							</Link>
 						</NavMobile>
 						<FooterContainer>
 							<ContactSingleInfo>
 								<MailIcon />
-								<p>hello@readyscale.co</p>
+								<p>hello@elkod.hr</p>
 							</ContactSingleInfo>
 							<BottomWrapper>
 								<ContactSingleInfo>
 									<Image src={linkedInIcon} alt="LinkedInIcon" />
-									<p>ReadyScale</p>
+									<p>Elkod</p>
 								</ContactSingleInfo>
 								<ContactSingleInfo>
 									<Image src={euLogo} alt="euLogo" />

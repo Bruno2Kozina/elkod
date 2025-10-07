@@ -8,47 +8,66 @@ import {
 	MainContainer,
 	AnimationWrapper,
 	Button,
-	BottomDescriptionContainer
+	ReverseDescriptionContainer
 } from './DescriptionSection.style'
 import animationData from 'Lottie export/USP 1/data.json'
 import animationData2 from 'Lottie export/USP 2/data.json'
 import Link from 'next/link'
-
-export const DescriptionSection = () => {
+interface Props {
+	scrollRef: React.RefObject<HTMLDivElement>
+}
+export const DescriptionSection = ({ scrollRef }: Props) => {
 	return (
-		<MainContainer>
+		<MainContainer ref={scrollRef}>
 			<ContentContainer>
 				<DescriptionContainer>
 					<AnimationWrapper>
 						<Lottie animationData={animationData} />
 					</AnimationWrapper>
 					<TextWrapper>
-						<DescSectionTitle>
-							A <b>360-degree</b> scaling approach
-						</DescSectionTitle>
+						<DescSectionTitle>EL10-2</DescSectionTitle>
 						<DescSectionDesc>
-							<b>We know what startups and mid-sized companies need to scale</b>, and we’re here to guide you through that process. From Paid
-							advertising and Lead generation to Customer engagement campaigns and Deal closing, we provide a full-spectrum growth approach.
+							Model EL10-2 limitator nivoa zvuka namijenjen ograničavanju razine zvuka u ugostiteljskim i drugim objektima koje za ozvučenje koriste
+							pojačala ili muzičku liniju sa dva izlaza za zvučnike.
 						</DescSectionDesc>
 					</TextWrapper>
 				</DescriptionContainer>
-				<BottomDescriptionContainer>
+				<ReverseDescriptionContainer>
 					<TextWrapper>
-						<DescSectionTitle>
-							Seamless Onboarding: <br /> <b>Plug-and-Play success.</b>
-						</DescSectionTitle>
+						<DescSectionTitle>EL10-4</DescSectionTitle>
 						<DescSectionDesc>
-							Start your growth journey with ReadyScale in no time. Our streamlined onboarding process ensures a seamless transition, allowing you to
-							<b> quickly benefit from our expertise and experience rapid results.</b>
+							Model EL10-4 limitator nivoa zvuka namijenjen ograničavanju razine zvuka u ugostiteljskim i drugim objektima koji za ozvučenje koriste
+							pojačalo ili muzičku liniju sa četiri izlaza za zvučnike.
 						</DescSectionDesc>
-						<Link href="/approach">
-							<Button>Discover more</Button>
-						</Link>
 					</TextWrapper>
 					<AnimationWrapper>
 						<Lottie animationData={animationData2} />
 					</AnimationWrapper>
-				</BottomDescriptionContainer>
+				</ReverseDescriptionContainer>
+				<DescriptionContainer>
+					<AnimationWrapper>
+						<Lottie animationData={animationData} />
+					</AnimationWrapper>
+					<TextWrapper>
+						<DescSectionTitle>EL18</DescSectionTitle>
+						<DescSectionDesc>
+							Model EL18 limitator nivoa zvuka namijenjen ograničavanju razine zvuka u ugostiteljskim i drugim objektima koji za ozvučenje koriste
+							kompliciranije razglasne sisteme. Odnosno više pojačala, aktivne zvučnike ili pak kombinaciju aktivnih i pasivnih zvučnika.
+						</DescSectionDesc>
+					</TextWrapper>
+				</DescriptionContainer>
+				<ReverseDescriptionContainer>
+					<TextWrapper>
+						<DescSectionTitle>EL18T</DescSectionTitle>
+						<DescSectionDesc>
+							Model EL18T limitator nivoa zvuka namijenjen ograničavanju razine zvuka u ugostiteljskim i drugim objektima koji za ozvučenje koriste
+							kompliciranije razglasne sisteme. Odnosno više pojačala, aktivne zvučnike ili pak kombinaciju aktivnih i pasivnih zvučnika.
+						</DescSectionDesc>
+					</TextWrapper>
+					<AnimationWrapper>
+						<Lottie animationData={animationData2} />
+					</AnimationWrapper>
+				</ReverseDescriptionContainer>
 			</ContentContainer>
 		</MainContainer>
 	)

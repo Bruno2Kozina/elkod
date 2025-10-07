@@ -22,14 +22,12 @@ export default function Footer() {
 			<ContentContainer>
 				<Container>
 					<Wrapper>
-						<LeftSection>
-							<LogoBlack />
-						</LeftSection>
+						<LeftSection>LOGO</LeftSection>
 						<RightSection>
 							<RightBox>
-								<h6>Address</h6>
+								<h6>Adresa</h6>
 								<BoxWrapper>
-									<p>Gajnice 5, 10 000 Zagreb</p>
+									<p>Svetog Mihovila 28, 21240, Trilj</p>
 									<ContactSingleInfo>
 										<Image src={euLogo} alt="euLogo" />
 										<p>EU based</p>
@@ -37,29 +35,18 @@ export default function Footer() {
 								</BoxWrapper>
 							</RightBox>
 							<RightBox>
-								<h6>Contact</h6>
+								<h6>Kontakt</h6>
 								<BoxWrapper>
 									<ContactSingleInfo>
 										<div style={{ width: '24px', height: '24px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
 											<MailIcon />
 										</div>
-										<p>hello@readyscale.co</p>
+										<p>hello@elkod.hr</p>
 									</ContactSingleInfo>
 									{/* <ContactSingleInfo>
 										<Image src={phoneCallIcon} alt="PhoneCall icon" />
 										<p>(270) 555-0117</p>
 									</ContactSingleInfo> */}
-									<Link
-										href="https://www.linkedin.com/company/readyscale"
-										style={{ textDecoration: 'none', color: '#141313', cursor: 'pointer' }}
-										target="_blank">
-										<ContactSingleInfo>
-											<div style={{ width: '24px', height: '24px' }}>
-												<LinkedInIcon />
-											</div>
-											<p>ReadyScale</p>
-										</ContactSingleInfo>
-									</Link>
 								</BoxWrapper>
 							</RightBox>
 						</RightSection>
@@ -67,7 +54,7 @@ export default function Footer() {
 				</Container>
 				<Separator />
 				<BottomFooter>
-					<p>©2024, All rights reserved.</p>
+					<p>Copyright © 2025 ELKOD</p>
 				</BottomFooter>
 			</ContentContainer>
 		</MainContainer>

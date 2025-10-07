@@ -1,19 +1,15 @@
 'use client'
 
-import { ClientFeedback } from './clientFeedback'
+import { useRef } from 'react'
 import { DescriptionSection } from './descriptionSection'
 import { HeroSection } from './heroSection'
-import { KeyTools } from './keyTools'
-import { ServicesSection } from './servicesSection'
 
 export const HomeScreen = () => {
+	const scrollRef = useRef<HTMLDivElement | null>(null)
 	return (
 		<>
-			<HeroSection />
-			<DescriptionSection />
-			<ServicesSection />
-			<ClientFeedback />
-			<KeyTools />
+			<HeroSection scrollRef={scrollRef} />
+			<DescriptionSection scrollRef={scrollRef} />
 		</>
 	)
 }

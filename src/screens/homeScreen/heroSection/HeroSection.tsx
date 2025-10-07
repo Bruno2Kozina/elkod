@@ -1,37 +1,41 @@
 import Lottie from 'lottie-react'
-import { ContentContainer, HeroDesc, LeftContainer, MainContainer, TitleDescContainer, AnimationContainer, Button } from './HeroSection.style'
+import { ContentContainer, HeroDesc, LeftContainer, MainContainer, TitleDescContainer, Button, AnimationWrapper } from './HeroSection.style'
 
 import animationData from 'Lottie export/Landing page - Hero/data.json'
-import animationDataMobile from 'Lottie export/Readyscale - Mobile/Landing page - Hero - Mobile/data.json'
 import { H1 } from 'components/headings/Headings.style'
 import { ArrowRightIcon } from 'icons'
-import { useScreenSize } from 'hooks'
 import Link from 'next/link'
 
-export const HeroSection = () => {
-	const { width } = useScreenSize()
+interface Props {
+	scrollRef: React.RefObject<HTMLDivElement>
+}
 
+export const HeroSection = ({ scrollRef }: Props) => {
+	const handleScroll = () => {
+		scrollRef.current.scrollIntoView({ behavior: 'smooth' })
+	}
 	return (
 		<MainContainer>
 			<ContentContainer>
-				<AnimationContainer>
-					{width && width < 1024 && <Lottie animationData={animationDataMobile} />}
-					{width && width >= 1024 && <Lottie animationData={animationData} />}
-				</AnimationContainer>
 				<LeftContainer>
 					<TitleDescContainer>
-						<H1>Get to the next level by supercharging your growth</H1>
+						<H1>
+							Elkod Limitatori <br /> Kontrola zvuka na najvišoj razini!
+						</H1>
 						<HeroDesc>
-							Your challenges are not new to us - we’ve tackled them before. Attain your goals using our proven Lead generation and Growth marketing
-							methods.
+							Naši limitatori buke koriste se u klubovima, restoranima i poslovnim prostorima kako bi spriječili preglasnu reprodukciju. Certificirana
+							tehnologija osigurava sigurnost, kvalitetu i poštivanje zakonskih regulativa.
 						</HeroDesc>
 					</TitleDescContainer>
-					<Link href="https://calendly.com/nikola-bmbz/30min" target="_blank">
-						<Button>
-							Book a call <ArrowRightIcon />
+					<Link href={''}>
+						<Button onClick={() => handleScroll()}>
+							Saznaj više <ArrowRightIcon />
 						</Button>
 					</Link>
 				</LeftContainer>
+				<AnimationWrapper>
+					<Lottie style={{ width: '100%', height: '100%' }} animationData={animationData} />
+				</AnimationWrapper>
 			</ContentContainer>
 		</MainContainer>
 	)

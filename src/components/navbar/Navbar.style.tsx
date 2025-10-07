@@ -1,14 +1,13 @@
 import styled from '@emotion/styled'
 import { devices } from 'parameters/general'
 
-export const Container = styled.div<{ hasBorder: boolean }>`
-	position: fixed;
+export const Container = styled.div`
+	position: absolute;
 	display: flex;
 	justify-content: center;
-	background-color: #141313;
+	background-color: transparent;
 	width: 100%;
 	z-index: 100000;
-	border-bottom: ${({ hasBorder }) => (hasBorder ? ' 1px solid #fff' : 'none')};
 `
 
 export const Header = styled.header`
@@ -22,6 +21,7 @@ export const Header = styled.header`
 	color: #fff;
 	font-size: 16px;
 	max-width: 1440px;
+	height: 80px;
 
 	@media ${devices.laptop} {
 		height: 56px;
@@ -142,15 +142,6 @@ export const NavItemMobile = styled.div`
 	color: #141313;
 	font-size: 24px;
 	font-weight: 500;
-`
-
-export const MobileButton = styled.button`
-	width: 100%;
-	padding: 20px 32px;
-	color: #fff;
-	background-color: #4c1ee8;
-	border: none;
-	font-size: 16px;
 `
 
 export const Wrapper = styled.div`

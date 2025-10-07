@@ -2,7 +2,7 @@ import styled from '@emotion/styled'
 import { devices } from 'parameters/general'
 
 export const MainContainer = styled.div`
-	background-color: #f2efe9;
+	background-color: #f0f0f6;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -31,7 +31,7 @@ export const DescriptionContainer = styled.div`
 		gap: 24px;
 	}
 `
-export const BottomDescriptionContainer = styled.div`
+export const ReverseDescriptionContainer = styled.div`
 	display: flex;
 	align-items: center;
 	gap: 100px;

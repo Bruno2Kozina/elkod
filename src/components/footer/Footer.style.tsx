@@ -4,7 +4,7 @@ import { devices } from 'parameters/general'
 export const MainContainer = styled.div`
 	display: flex;
 	justify-content: center;
-	background-color: #f2efe9;
+	background-color: #fff;
 `
 
 export const ContentContainer = styled.div`
@@ -12,7 +12,7 @@ export const ContentContainer = styled.div`
 	display: flex;
 	flex-direction: column;
 	gap: 40px;
-	background-color: #f2efe9;
+	background-color: #fff;
 	max-width: 1440px;
 	@media ${devices.laptop} {
 		gap: unset;

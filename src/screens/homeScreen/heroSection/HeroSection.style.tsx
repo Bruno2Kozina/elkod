@@ -5,7 +5,7 @@ export const MainContainer = styled.div`
 	display: flex;
 	justify-content: center;
 	color: #fff;
-	background-color: #141313;
+	background: linear-gradient(135deg, #0f172a 0%, #1e293b 40%, #312e81 100%);
 	position: relative;
 	@media ${devices.laptop} {
 		padding-top: 60px;
@@ -19,7 +19,7 @@ export const ContentContainer = styled.div`
 	gap: 40px;
 	max-width: 1440px;
 	@media ${devices.laptop} {
-		flex-direction: column;
+		flex-direction: column-reverse;
 		width: 100vw;
 		padding: 16px 32px 40px;
 		align-items: center;
@@ -64,13 +64,12 @@ export const TitleDescContainer = styled.div`
 		font-weight: 200;
 	}
 `
-export const AnimationContainer = styled.div`
-	position: absolute;
-	bottom: -2px;
 
+export const AnimationWrapper = styled.div`
+	width: 40%;
+	height: 500px;
 	@media ${devices.laptop} {
-		position: relative;
-		width: 160px;
+		height: 300px;
 	}
 `
 
