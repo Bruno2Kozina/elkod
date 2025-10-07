@@ -12,7 +12,9 @@ interface Props {
 
 export const HeroSection = ({ scrollRef }: Props) => {
 	const handleScroll = () => {
-		scrollRef.current.scrollIntoView({ behavior: 'smooth' })
+		if (scrollRef.current) {
+			scrollRef.current.scrollIntoView({ behavior: 'smooth' })
+		}
 	}
 	return (
 		<MainContainer>
