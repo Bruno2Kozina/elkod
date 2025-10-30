@@ -1,4 +1,3 @@
-import Lottie from 'lottie-react'
 import { ContentContainer, HeroDesc, LeftContainer, MainContainer, TitleDescContainer, Button, AnimationWrapper } from './HeroSection.style'
 
 import animationData from 'Lottie export/Landing page - Hero/data.json'
@@ -30,9 +29,7 @@ export const HeroSection = ({ handleScroll }: Props) => {
 						</Button>
 					</Link>
 				</LeftContainer>
-				<AnimationWrapper>
-					<Lottie style={{ width: '100%', height: '100%' }} animationData={animationData} />
-				</AnimationWrapper>
+				<AnimationWrapper></AnimationWrapper>
 			</ContentContainer>
 		</MainContainer>
 	)
