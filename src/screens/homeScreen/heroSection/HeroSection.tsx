@@ -7,22 +7,17 @@ import { ArrowRightIcon } from 'icons'
 import Link from 'next/link'
 
 interface Props {
-	scrollRef: React.RefObject<HTMLDivElement>
+	handleScroll: () => void
 }
 
-export const HeroSection = ({ scrollRef }: Props) => {
-	const handleScroll = () => {
-		if (scrollRef.current) {
-			scrollRef.current.scrollIntoView({ behavior: 'smooth' })
-		}
-	}
+export const HeroSection = ({ handleScroll }: Props) => {
 	return (
 		<MainContainer>
 			<ContentContainer>
 				<LeftContainer>
 					<TitleDescContainer>
 						<H1>
-							Elkod Limitatori <br /> Kontrola zvuka na najvišoj razini!
+							Elkod Limitatori - <br /> Kontrola zvuka na najvišoj razini!
 						</H1>
 						<HeroDesc>
 							Naši limitatori buke koriste se u klubovima, restoranima i poslovnim prostorima kako bi spriječili preglasnu reprodukciju. Certificirana

@@ -25,11 +25,7 @@ export const DescriptionSection = () => {
 						<h3>email</h3>
 						<ContactSingleInfo>
 							<MailIcon />
-							<span>damir@damir.hr</span> ?????
-						</ContactSingleInfo>
-						<ContactSingleInfo>
-							<MailIcon />
-							<span>damir@damir.hr</span> ?????
+							<span>damir.kozina@st.t‐com.hr</span> ?????
 						</ContactSingleInfo>
 					</SingleData>
 					<SingleData>

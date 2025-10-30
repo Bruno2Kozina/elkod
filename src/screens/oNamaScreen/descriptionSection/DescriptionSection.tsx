@@ -1,40 +1,18 @@
-import Lottie from 'lottie-react'
-import {
-	DescriptionContainer,
-	TextWrapper,
-	DescSectionTitle,
-	DescSectionDesc,
-	ContentContainer,
-	MainContainer,
-	AnimationWrapper,
-	DescSectionMainTitle,
-	TitlesContainer
-} from './DescriptionSection.style'
-import animationData from 'Lottie export/Discover/data.json'
-import animationData2 from 'Lottie export/Strategize/data.json'
-import animationData3 from 'Lottie export/Measure/data.json'
-import animationData4 from 'Lottie export/Optimize/data.json'
+import { DescriptionContainer, MainContainer } from './DescriptionSection.style'
 
 export const DescriptionSection = () => {
 	return (
 		<MainContainer>
-			<ContentContainer>
-				<DescriptionContainer isReverseFlex={false}>
-					<AnimationWrapper></AnimationWrapper>
-					<TextWrapper>
-						<TitlesContainer>
-							<DescSectionMainTitle>Discover</DescSectionMainTitle>
-							<DescSectionTitle>What&apos;s holding you back?</DescSectionTitle>
-						</TitlesContainer>
-						<DescSectionDesc>
-							Before we can guide you towards growth, we need to know where you&apos;re starting. Our discovery phase involves a deep dive into your
-							business. We examine your data, conduct competitive research and assess your alignment with the industry&apos;s best practices. It helps
-							us <b>detect opportunities and identify barriers</b> that are hindering your business&apos;s potential. We don&apos;t just look at where
-							you&apos;re standing; we investigate why you&apos;re standing there and what&apos;s keeping you from advancing.
-						</DescSectionDesc>
-					</TextWrapper>
-				</DescriptionContainer>
-			</ContentContainer>
+			<DescriptionContainer>
+				<p>
+					Elkod je obrt osnovan 1996. godine od strane diplomiranog inzenjera elektronike, s ciljem pružanja kvalitetnih i pouzdanih rješenja u
+					području elektronike. Od samih početaka osnovna djelatnost bila je servis i održavanje elektroničkih uređaja, kroz što je stečeno
+					dugogodišnje iskustvo i prepoznatljivost po stručnoj i preciznoj izvedbi. S razvojem tržišta i pojavom potrebe za ispunjavanjem minimalnih
+					tehničkih uvjeta u ugostiteljskim objektima, Elkod je proširio svoje poslovanje i započeo vlastitu proizvodnju limitatora razine zvuka.
+					Tijekom gotovo tri desetljeća poslovanja, izgradili smo reputaciju pouzdanog partnera u području elektronike, s jasnim fokusom na stručnost,
+					kvalitetu i prilagodbu potrebama tržišta.
+				</p>
+			</DescriptionContainer>
 		</MainContainer>
 	)
 }

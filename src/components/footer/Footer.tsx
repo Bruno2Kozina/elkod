@@ -1,20 +1,16 @@
 import {
 	Container,
-	LeftSection,
 	RightSection,
 	Wrapper,
 	RightBox,
-	ContactSingleInfo,
 	BoxWrapper,
 	MainContainer,
 	Separator,
 	BottomFooter,
-	ContentContainer
+	ContentContainer,
+	LogoWrapper
 } from './Footer.style'
-import Image from 'next/image'
-import euLogo from 'public/icons/euLogo.svg'
-import Link from 'next/link'
-import { LinkedInIcon, LogoBlack, MailIcon } from 'icons'
+import { LogoElkod } from 'icons'
 
 export default function Footer() {
 	return (
@@ -22,31 +18,26 @@ export default function Footer() {
 			<ContentContainer>
 				<Container>
 					<Wrapper>
-						<LeftSection>LOGO</LeftSection>
+						<LogoWrapper>
+							<LogoElkod />
+						</LogoWrapper>
 						<RightSection>
 							<RightBox>
-								<h6>Adresa</h6>
 								<BoxWrapper>
-									<p>Svetog Mihovila 28, 21240, Trilj</p>
-									<ContactSingleInfo>
-										<Image src={euLogo} alt="euLogo" />
-										<p>EU based</p>
-									</ContactSingleInfo>
+									<p style={{ fontWeight: 600 }}>ELKOD d.o.o.</p>
+									<p>ULICA SV. MIHOVILA 28</p>
+									<p>21240 Trilj</p>
+									<p>OIB: 05532514124</p>
+									<p>MBS: 91066336</p>
 								</BoxWrapper>
 							</RightBox>
 							<RightBox>
-								<h6>Kontakt</h6>
 								<BoxWrapper>
-									<ContactSingleInfo>
-										<div style={{ width: '24px', height: '24px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-											<MailIcon />
-										</div>
-										<p>hello@elkod.hr</p>
-									</ContactSingleInfo>
-									{/* <ContactSingleInfo>
-										<Image src={phoneCallIcon} alt="PhoneCall icon" />
-										<p>(270) 555-0117</p>
-									</ContactSingleInfo> */}
+									<p>Žiro račun: IBAN: HR2824070001100575905</p>
+									<p>Otvoren kod OTP banka Hrvatska d.d.</p>
+									<p>Trgovački sud u Splitu</p>
+									<p>član uprave: Damir Kozina</p>
+									<p>temeljni kapital 2,654€ uplaćen u cijelosti</p>
 								</BoxWrapper>
 							</RightBox>
 						</RightSection>
@@ -54,7 +45,7 @@ export default function Footer() {
 				</Container>
 				<Separator />
 				<BottomFooter>
-					<p>Copyright © 2025 ELKOD</p>
+					<p>Copyright © 2025 Elkod</p>
 				</BottomFooter>
 			</ContentContainer>
 		</MainContainer>

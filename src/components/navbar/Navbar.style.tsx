@@ -16,7 +16,7 @@ export const Header = styled.header`
 	width: 100%;
 	justify-content: space-between;
 	align-items: center;
-	padding: 17px 164px;
+	padding: 17px 120px;
 	height: auto;
 	color: #fff;
 	font-size: 16px;
@@ -111,7 +111,7 @@ export const Button = styled.button`
 `
 
 export const NavMobileContainer = styled.div<{ open: boolean }>`
-	background-color: #eeebe5;
+	background-color: #f0f0f6;
 	position: absolute;
 	top: 56px;
 	height: calc(100vh - 56px);
@@ -167,4 +167,9 @@ export const ContactSingleInfo = styled.div`
 	display: flex;
 	align-items: center;
 	gap: 8px;
+`
+
+export const LogoWrapper = styled.div`
+	max-width: 60px;
+	max-height: 60px;
 `

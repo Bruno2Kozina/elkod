@@ -6,9 +6,14 @@ import { HeroSection } from './heroSection'
 
 export const HomeScreen = () => {
 	const scrollRef = useRef<HTMLDivElement | null>(null)
+	const handleScroll = () => {
+		setTimeout(() => {
+			scrollRef.current?.scrollIntoView({ behavior: 'smooth' })
+		}, 50)
+	}
 	return (
 		<>
-			<HeroSection scrollRef={scrollRef} />
+			<HeroSection handleScroll={handleScroll} />
 			<DescriptionSection scrollRef={scrollRef} />
 		</>
 	)

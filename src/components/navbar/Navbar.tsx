@@ -4,6 +4,7 @@ import {
 	Container,
 	FooterContainer,
 	Header,
+	LogoWrapper,
 	Nav,
 	NavItem,
 	NavItemMobile,
@@ -13,13 +14,13 @@ import {
 } from './Navbar.style'
 import Image from 'next/image'
 import Link from 'next/link'
-import logo from 'public/icons/logo.svg'
 import { usePathname } from 'next/navigation'
 import { useScreenSize } from 'hooks'
 import { ArrowRightIcon, CloseIcon, HamburgerMenuIcon, MailIcon } from 'icons'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import linkedInIcon from 'public/icons/LinkedIn.svg'
 import euLogo from 'public/icons/euLogo.svg'
+import { LogoElkod } from 'icons'
 
 export default function Navbar() {
 	const path = usePathname()
@@ -29,19 +30,27 @@ export default function Navbar() {
 	const toggleMenu = () => {
 		setIsMenuOpen(!isMenuOpen)
 	}
+
+	useEffect(() => {
+		if (isMenuOpen) {
+			document.body.style.overflow = 'hidden' // onemogući scroll
+		} else {
+			document.body.style.overflow = '' // vrati scroll kad se zatvori
+		}
+
+		// cleanup ako se komponenta demontira
+		return () => {
+			document.body.style.overflow = ''
+		}
+	}, [isMenuOpen])
 	return (
 		<Container>
 			<Header>
-				{width && width > 1024 && (
-					<Link href="/" onClick={() => setIsMenuOpen(false)} style={{ height: '32px' }}>
-						<span>ELKOD</span>
-					</Link>
-				)}
-				{width && width <= 1024 && (
-					<Link href="/" onClick={() => setIsMenuOpen(false)}>
-						<span>ELKOD</span>
-					</Link>
-				)}
+				<Link href="/" onClick={() => setIsMenuOpen(false)}>
+					<LogoWrapper>
+						<LogoElkod />
+					</LogoWrapper>
+				</Link>
 				{width && width > 1024 && (
 					<Nav>
 						<NavItem active={path === '/'}>
@@ -71,7 +80,7 @@ export default function Navbar() {
 						<NavMobile>
 							<Link href="/">
 								<NavItemMobile onClick={toggleMenu}>
-									<span>Home</span>
+									<span>Naslovna</span>
 									<ArrowRightIcon />
 								</NavItemMobile>
 							</Link>

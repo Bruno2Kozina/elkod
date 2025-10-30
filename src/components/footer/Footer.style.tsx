@@ -31,6 +31,8 @@ export const Wrapper = styled.div`
 	display: flex;
 	justify-content: space-between;
 	width: 100%;
+	font-size: 14px;
+	letter-spacing: 2px;
 
 	@media ${devices.laptop} {
 		flex-direction: column;
@@ -38,9 +40,6 @@ export const Wrapper = styled.div`
 	}
 `
 
-export const LeftSection = styled.div`
-	width: 50%;
-`
 export const RightSection = styled.div`
 	display: flex;
 	gap: 64px;
@@ -58,26 +57,22 @@ export const RightBox = styled.div`
 	}
 `
 
-export const ContactSingleInfo = styled.div`
-	display: flex;
-	align-items: center;
-	gap: 8px;
-`
-
 export const BoxWrapper = styled.div`
 	display: flex;
 	flex-direction: column;
 	gap: 8px;
+	padding-top: 12px;
 `
 
 export const Separator = styled.span`
 	height: 1px;
-	background-color: black;
+	background-color: #dae8ea;
 `
 
 export const BottomFooter = styled.div`
 	display: flex;
 	padding: 0 164px 40px;
+	font-size: 14px;
 	@media ${devices.laptop} {
 		padding: 40px 24px 64px;
 	}
@@ -86,4 +81,9 @@ export const BottomFooter = styled.div`
 export const SocialIcons = styled.div`
 	display: flex;
 	gap: 12px;
+`
+
+export const LogoWrapper = styled.div`
+	max-width: 152px;
+	max-height: 152px;
 `
