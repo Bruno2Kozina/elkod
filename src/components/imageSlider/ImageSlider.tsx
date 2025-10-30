@@ -1,9 +1,7 @@
 'use client'
 
-import { useEffect, useRef, useState } from 'react'
+import { useState } from 'react'
 import { SliderContainer } from './ImageSlider.style'
-import Slider from 'react-slick'
-import Image from 'next/image'
 import { StaticImageData } from 'next/image'
 
 // CHECK GLOBAL STYLES FOR SLICK-PREV AND SLICK-NEXT
@@ -59,42 +57,6 @@ interface Props {
 	imagesAlt: string[]
 }
 const ImageSlider = ({ images, imagesAlt }: Props) => {
-	const sliderRef = useRef<Slider>(null)
-	const settings = {
-		dots: true,
-		infinite: true,
-		speed: 500,
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		autoplay: false,
-		autoplaySpeed: 3000,
-		prevArrow: <CustomPrevArrow />, // Custom left arrow
-		nextArrow: <CustomNextArrow /> // Custom right arrow
-	}
-
-	useEffect(() => {
-		const handleKeyDown = (e: KeyboardEvent) => {
-			if (e.key === 'ArrowLeft') {
-				sliderRef.current?.slickPrev()
-			} else if (e.key === 'ArrowRight') {
-				sliderRef.current?.slickNext()
-			}
-		}
-
-		window.addEventListener('keydown', handleKeyDown)
-		return () => window.removeEventListener('keydown', handleKeyDown)
-	}, [])
-
-	return (
-		<SliderContainer>
-			<Slider ref={sliderRef} {...settings}>
-				{images.map((src, index) => (
-					<div key={index}>
-						<Image src={src} style={{ width: '100%', objectFit: 'cover', height: '100%' }} alt={imagesAlt[index]} />
-					</div>
-				))}
-			</Slider>
-		</SliderContainer>
-	)
+	return <SliderContainer></SliderContainer>
 }
 export default ImageSlider
