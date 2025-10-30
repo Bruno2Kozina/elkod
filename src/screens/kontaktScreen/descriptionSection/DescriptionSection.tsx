@@ -10,25 +10,18 @@ export const DescriptionSection = () => {
 						<h3>telefon</h3>
 						<ContactSingleInfo>
 							<MailIcon />
-							<span>Fax: +385 21 314 368</span> ?????
-						</ContactSingleInfo>
-						<ContactSingleInfo>
-							<MailIcon />
-							<span>Damir Kozina +385 98 716 632</span>
+							<span>Damir Kozina +385 95 586 3015</span>
 						</ContactSingleInfo>
 					</SingleData>
 					<SingleData>
 						<h3>email</h3>
 						<ContactSingleInfo>
 							<MailIcon />
-							<span>damir.kozina@st.t‐com.hr</span> ?????
+							<span>damir.kozina@st.t‐com.hr</span>
 						</ContactSingleInfo>
-					</SingleData>
-					<SingleData>
-						<h3>radno vrijeme</h3>
 						<ContactSingleInfo>
 							<MailIcon />
-							<span>Ponedjeljak – Petak 8 - 16</span> ?????
+							<span>damirkozina11@gmail.com</span>
 						</ContactSingleInfo>
 					</SingleData>
 				</DescriptionContainer>
