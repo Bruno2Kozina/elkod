@@ -10,10 +10,6 @@ export const DescriptionSection = () => {
 						<h3>telefon</h3>
 						<ContactSingleInfo>
 							<MailIcon />
-							<span>Ured +385 21 487 222</span> ?????
-						</ContactSingleInfo>
-						<ContactSingleInfo>
-							<MailIcon />
 							<span>Fax: +385 21 314 368</span> ?????
 						</ContactSingleInfo>
 						<ContactSingleInfo>

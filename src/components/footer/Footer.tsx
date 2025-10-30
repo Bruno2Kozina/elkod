@@ -24,7 +24,7 @@ export default function Footer() {
 						<RightSection>
 							<RightBox>
 								<BoxWrapper>
-									<p style={{ fontWeight: 600 }}>ELKOD d.o.o.</p>
+									<p style={{ fontWeight: 600 }}>ELKOD</p>
 									<p>ULICA SV. MIHOVILA 28</p>
 									<p>21240 Trilj</p>
 									<p>OIB: 05532514124</p>
@@ -33,7 +33,7 @@ export default function Footer() {
 							</RightBox>
 							<RightBox>
 								<BoxWrapper>
-									<p>Žiro račun: IBAN: HR2824070001100575905</p>
+									<p>Žiro račun: IBAN: HR123123123123123</p>
 									<p>Otvoren kod OTP banka Hrvatska d.d.</p>
 									<p>Trgovački sud u Splitu</p>
 									<p>član uprave: Damir Kozina</p>

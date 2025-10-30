@@ -37,7 +37,7 @@ export default function RootLayout({
 		<HTML lang="en" className={SpaceGrotesk.className}>
 			<head>
 				<title>Elkod</title>
-				<link rel="icon" href="/fa.ico" /> {/* Dodat favicon umjesto fa TODO !!!! */}
+				<link rel="icon" href="/favicon.ico" /> {/* Dodat favicon umjesto fa TODO !!!! */}
 				{/* Place GTM container snippet directly in the head */}
 			</head>
 			<body>
