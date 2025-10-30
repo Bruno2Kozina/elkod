@@ -1,3 +1,5 @@
+'use client'
+
 import { useEffect, useRef, useState } from 'react'
 import { SliderContainer } from './ImageSlider.style'
 import Slider from 'react-slick'
