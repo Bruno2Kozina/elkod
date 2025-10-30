@@ -28,7 +28,7 @@ export const limitatori: Limitator[] = [
 			'Model EL10-2 limitator nivoa zvuka namijenjen ograničavanju razine zvuka u ugostiteljskim i drugim objektima koje za ozvučenje koriste pojačala ili muzičku liniju sa dva izlaza za zvučnike.',
 		longDescription:
 			'Model EL10-2 limitator nivoa zvuka namijenjen ograničavanju razine zvuka u ugostiteljskim i drugim objektima koje za ozvučenje koriste pojačala ili muzičku liniju sa dva izlaza za zvučnike. Uređaj ima indikator nivoa zvuka, a nakon prelaska u nedozvoljeni nivo (65dB) uređaj stišava nivo zvuka za 6dB i održava razinu zvuka ispod ograničenog nivoa. Limitator ima dva kabela koji se spajaju na izlaz pojačala ili muzičke linije, a zvučnici se spajaju u kutiju limitatora nivoa zvuka, nakon čega se kutija zatvori i zaštiti sigurnosnom naljepnicom.',
-		images: [limitatorEl10_4_1, limitatorEl10_4_2, limitatorEl10_4_3, limitatorEl10_4_4, limitatorEl10_4_5],
+		images: [limitatorEl10_20_1, limitatorEl10_20_2, limitatorEl10_20_3, limitatorEl10_20_4, limitatorEl10_20_5],
 		imagesAlt: ['limitatorEl10_4_1', 'limitatorEl10_4_2', 'limitatorEl10_4_3', 'limitatorEl10_4_4', 'limitatorEl10_4_5'],
 		specifikacije: [
 			'Nazivni napon: 180-240V',
@@ -45,7 +45,7 @@ export const limitatori: Limitator[] = [
 			'Model EL10-4 limitator nivoa zvuka namijenjen ograničavanju razine zvuka u ugostiteljskim i drugim objektima koji za ozvučenje koriste pojačalo ili muzičku liniju sa četiri izlaza za zvučnike.',
 		longDescription:
 			'Model EL10-4 limitator nivoa zvuka namijenjen ograničavanju razine zvuka u ugostiteljskim i drugim objektima koji za ozvučenje koriste pojačalo ili muzičku liniju sa četiri izlaza za zvučnike. Uređaj ima indikator nivoa zvuka, a nakon prelaska u nedozvoljeni nivo (65dB) uređaj utišava nivo zvuka za 6dB i održava razinu zvuka ispod ograničenog nivoa. Limitator ima četiri kabela koji se spajaju na izlaz pojačala ili muzičke linije, a zvučnici se spajaju u kutiju limitatora nivoa zvuka, nakon čega se kutija zatvori i zaštiti sigurnosnom naljepnicom.',
-		images: [limitatorEl10_20_1, limitatorEl10_20_2, limitatorEl10_20_3, limitatorEl10_20_4, limitatorEl10_20_5],
+		images: [limitatorEl10_4_1, limitatorEl10_4_2, limitatorEl10_4_3, limitatorEl10_4_4, limitatorEl10_4_5],
 		imagesAlt: ['limitator EL10-20_1, limitator EL10-20_2, limitator EL10-20_3, limitator EL10-20_4, limitator EL10-20_5'],
 		specifikacije: [
 			'Nazivni napon: 180-240V',
@@ -79,9 +79,9 @@ export const limitatori: Limitator[] = [
 		id: 4,
 		title: 'EL18T',
 		shortDescription:
-			'Model EL18T limitator nivoa zvuka namijenjen ograničavanju razine zvuka u ugostiteljskim i drugim objektima koji za ozvučenje koriste kompliciranije razglasne sisteme. Odnosno više pojačala, aktivne zvučnike ili pak kombinaciju aktivnih i pasivnih zvučnika. Nadogradjena verzija 18 sa integriranim timerom.',
+			'Model EL18T limitator nivoa zvuka namijenjen ograničavanju razine zvuka u ugostiteljskim i drugim objektima koji za ozvučenje koriste kompliciranije razglasne sisteme. Odnosno više pojačala, aktivne zvučnike ili pak kombinaciju aktivnih i pasivnih zvučnika. Nadogradjena verzija 18 sa integriranim timerom koji omogućava automatsko prebacivanje dvije različite razine zvuka. Npr. Kada je objekat caffe bar-noćni klub...',
 		longDescription:
-			'Model EL18T limitator nivoa zvuka namijenjen ograničavanju razine zvuka u ugostiteljskim i drugim objektima koji za ozvučenje koriste kompliciranije razglasne sisteme. Odnosno više pojačala, aktivne zvučnike ili pak kombinaciju aktivnih i pasivnih zvučnika. Ovaj model spaja se na linijski izlaz mixete koji ide prema pojačalima, te se spaja preko XLR-a na pojačala ili  distributere zvuka. Limitator konstantno prati nivo signala koji ide iz mixete prema pojačalima. U slučaju prekoračenja dozvoljenog nivoa zvuka (threshold) automatski smanjuje nivo signala (2s-10s), te nivo signala dovodi u dozvoljene granice. EL18T ima integriran elektronski vremenski prekidač koji omogućava dva režima rada. Idealan za ugostiteljske objekte koji rade kao caffe bar-ovi (65dB), te se u određeno vrijeme prebacuju u noćni klub (90dB).',
+			'Model EL18T limitator nivoa zvuka namijenjen ograničavanju razine zvuka u ugostiteljskim i drugim objektima koji za ozvučenje koriste kompliciranije razglasne sisteme. Odnosno više pojačala, aktivne zvučnike ili pak kombinaciju aktivnih i pasivnih zvučnika. Nadogradjena verzija 18 sa integriranim timerom koji omogućava automatsko prebacivanje dvije različite razine zvuka. Npr. Kada je objekat caffe bar-noćni klub... Ovaj model spaja se na linijski izlaz mixete koji ide prema pojačalima, te se spaja preko XLR-a na pojačala ili  distributere zvuka. Limitator konstantno prati nivo signala koji ide iz mixete prema pojačalima. U slučaju prekoračenja dozvoljenog nivoa zvuka (threshold) automatski smanjuje nivo signala (2s-10s), te nivo signala dovodi u dozvoljene granice. EL18T ima integriran elektronski vremenski prekidač koji omogućava dva režima rada. Idealan za ugostiteljske objekte koji rade kao caffe bar-ovi (65dB), te se u određeno vrijeme prebacuju u noćni klub (90dB).',
 		images: [limitatorEl18T_1, limitatorEl18T_2, limitatorEl18T_3, limitatorEl18T_4, limitatorEl18T_5],
 		imagesAlt: ['limitator EL18T_1, limitator EL18T_2, limitator EL18T_3, limitator EL18T_4, limitator EL18T_5'],
 		specifikacije: [

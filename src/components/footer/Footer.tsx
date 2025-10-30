@@ -33,7 +33,7 @@ export default function Footer() {
 							</RightBox>
 							<RightBox>
 								<BoxWrapper>
-									<p>Žiro račun: IBAN: HR123123123123123</p>
+									<p>Žiro račun: IBAN: HR2924070001100605957</p>
 									<p>Otvoren kod OTP banka Hrvatska d.d.</p>
 									<p>Trgovački sud u Splitu</p>
 									<p>član uprave: Damir Kozina</p>
@@ -45,7 +45,7 @@ export default function Footer() {
 				</Container>
 				<Separator />
 				<BottomFooter>
-					<p>Copyright © 2025 Elkod</p>
+					<p>Copyright © 2025 ELKOD</p>
 				</BottomFooter>
 			</ContentContainer>
 		</MainContainer>

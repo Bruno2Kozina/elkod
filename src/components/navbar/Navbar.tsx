@@ -111,7 +111,7 @@ export default function Navbar() {
 							<BottomWrapper>
 								<ContactSingleInfo>
 									<Image src={linkedInIcon} alt="LinkedInIcon" />
-									<p>Elkod</p>
+									<p>ELKOD</p>
 								</ContactSingleInfo>
 								<ContactSingleInfo>
 									<Image src={euLogo} alt="euLogo" />
