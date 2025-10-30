@@ -7,6 +7,8 @@ import Navbar from 'components/navbar/Navbar'
 import Footer from 'components/footer/Footer'
 import styled from '@emotion/styled'
 import { usePathname } from 'next/navigation'
+import 'slick-carousel/slick/slick.css'
+import 'slick-carousel/slick/slick-theme.css'
 
 const SpaceGrotesk = Space_Grotesk({
 	subsets: ['latin'],
