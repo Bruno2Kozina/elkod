@@ -1,9 +1,13 @@
+import dynamic from 'next/dynamic'
+
+// Dinamički import Lottie komponente, samo na clientu
 import { ContentContainer, HeroDesc, LeftContainer, MainContainer, TitleDescContainer, Button, AnimationWrapper } from './HeroSection.style'
 
 import animationData from 'Lottie export/Landing page - Hero/data.json'
 import { H1 } from 'components/headings/Headings.style'
 import { ArrowRightIcon } from 'icons'
 import Link from 'next/link'
+const LottieAnimation = dynamic(() => import('lottie-react'), { ssr: false })
 
 interface Props {
 	handleScroll: () => void
@@ -29,7 +33,9 @@ export const HeroSection = ({ handleScroll }: Props) => {
 						</Button>
 					</Link>
 				</LeftContainer>
-				<AnimationWrapper></AnimationWrapper>
+				<AnimationWrapper>
+					<LottieAnimation style={{ width: '100%', height: '100%' }} animationData={animationData} />
+				</AnimationWrapper>
 			</ContentContainer>
 		</MainContainer>
 	)
