@@ -20,7 +20,7 @@ export const HeroSection = ({ handleScroll }: Props) => {
 				<LeftContainer>
 					<TitleDescContainer>
 						<H1>
-							Elkod Limitatori - <br /> Kontrola zvuka na najvišoj razini!
+							ELKOD Limitatori - <br /> Kontrola zvuka na najvišoj razini!
 						</H1>
 						<HeroDesc>
 							Naši limitatori buke koriste se u klubovima, restoranima i poslovnim prostorima kako bi spriječili preglasnu reprodukciju. Certificirana
