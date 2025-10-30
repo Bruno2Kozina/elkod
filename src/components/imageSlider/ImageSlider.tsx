@@ -1,10 +1,9 @@
-'use client'
-
 import { useEffect, useRef, useState } from 'react'
-import { SliderContainer, SliderImage } from './ImageSlider.style'
+import { SliderContainer } from './ImageSlider.style'
 import Slider from 'react-slick'
 import Image from 'next/image'
 import { StaticImageData } from 'next/image'
+
 // CHECK GLOBAL STYLES FOR SLICK-PREV AND SLICK-NEXT
 const CustomPrevArrow = (props: any) => {
 	const [hover, setHover] = useState(false)

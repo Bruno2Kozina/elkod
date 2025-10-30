@@ -36,10 +36,6 @@ export const ArrowBase = styled.button`
 export const CustomPrevArrow = styled(ArrowBase)`
 	left: 10px;
 `
-export const SliderImage = styled.img`
-	width: 100%;
-	object-fit: cover;
-`
 export const CustomNextArrow = styled(ArrowBase)`
 	right: 10px;
 `

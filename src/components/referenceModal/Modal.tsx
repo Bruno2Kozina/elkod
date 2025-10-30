@@ -1,4 +1,4 @@
-import ImageSlider from 'components/imageSlider/ImageSlider'
+import ImageSlider2 from 'components/imageSlider/ImageSlider2'
 import {
 	ModalOverlay,
 	ModalContent,
@@ -24,7 +24,7 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, data }) => {
 	return (
 		<ModalOverlay onClick={onClose}>
 			<ModalContent onClick={e => e.stopPropagation()}>
-				<ImageSlider images={data.images} imagesAlt={data.imagesAlt} />
+				<ImageSlider2 images={data.images} imagesAlt={data.imagesAlt} />
 				<BottomSection>
 					<button className="modal-close" onClick={onClose}>
 						X
