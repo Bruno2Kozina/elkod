@@ -41,14 +41,6 @@ export default function RootLayout({
 				{/* Place GTM container snippet directly in the head */}
 			</head>
 			<body>
-				{/* Place GTM noscript iframe directly in the body */}
-				<noscript>
-					<iframe
-						src="https://www.googletagmanager.com/ns.html?id=GTM-PR8P244L"
-						height="0"
-						width="0"
-						style={{ display: 'none', visibility: 'hidden' }}></iframe>
-				</noscript>
 				<Navbar />
 				<div>{children}</div>
 				<Footer />
