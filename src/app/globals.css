@@ -18,3 +18,7 @@ h6 {
 button {
 	font-family: var(--font-space-grotesk), sans-serif;
 }
+
+html {
+	scroll-behavior: smooth;
+}
