@@ -3,10 +3,8 @@ import { Space_Grotesk } from 'next/font/google'
 import './globals.css'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
-import dynamic from 'next/dynamic'
-
-const Navbar = dynamic(() => import('components/navbar/Navbar'), { ssr: false })
-const Footer = dynamic(() => import('components/footer/Footer'), { ssr: false })
+import Navbar from 'components/navbar/Navbar'
+import Footer from 'components/footer/Footer'
 
 const SpaceGrotesk = Space_Grotesk({
 	subsets: ['latin'],
