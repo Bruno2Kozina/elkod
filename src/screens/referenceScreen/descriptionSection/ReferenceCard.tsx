@@ -1,5 +1,3 @@
-'use client'
-
 import Image from 'next/image'
 import { Card, ImageWrapper, Overlay, TextContainer } from './ReferencesSection.style'
 import { Referenca } from 'types/types'

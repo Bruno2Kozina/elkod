@@ -1,26 +1,17 @@
-'use client'
-
 import type { Metadata } from 'next'
 import { Space_Grotesk } from 'next/font/google'
 import './globals.css'
-import Navbar from 'components/navbar/Navbar'
-import Footer from 'components/footer/Footer'
-import styled from '@emotion/styled'
-import { usePathname } from 'next/navigation'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
+import dynamic from 'next/dynamic'
+
+const Navbar = dynamic(() => import('components/navbar/Navbar'), { ssr: false })
+const Footer = dynamic(() => import('components/footer/Footer'), { ssr: false })
 
 const SpaceGrotesk = Space_Grotesk({
 	subsets: ['latin'],
 	weight: ['400', '700']
 })
-
-const HTML = styled.html`
-	scroll-behavior: smooth;
-	button {
-		font-family: ${SpaceGrotesk.style.fontFamily};
-	}
-`
 
 export const metadata: Metadata = {
 	title: 'ELKOD',
@@ -53,9 +44,8 @@ export default function RootLayout({
 }: Readonly<{
 	children: React.ReactNode
 }>) {
-	const path = usePathname()
 	return (
-		<HTML lang="en" className={SpaceGrotesk.className}>
+		<html lang="en" className={SpaceGrotesk.className}>
 			<head>
 				<title>ELKOD</title>
 				<link rel="icon" href="/favicon.ico" /> {/* Dodat favicon umjesto fa TODO !!!! */}
@@ -66,6 +56,6 @@ export default function RootLayout({
 				<div>{children}</div>
 				<Footer />
 			</body>
-		</HTML>
+		</html>
 	)
 }

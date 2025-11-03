@@ -2,9 +2,12 @@
 
 import { useEffect, useRef, useState } from 'react'
 import { SliderContainer } from './ImageSlider.style'
-import Slider from 'react-slick'
 import Image from 'next/image'
 import { StaticImageData } from 'next/image'
+import dynamic from 'next/dynamic'
+import { SliderRef } from 'react-slick'
+// Import Slider only on client-side
+const Slider = dynamic(() => import('react-slick'), { ssr: false })
 
 // CHECK GLOBAL STYLES FOR SLICK-PREV AND SLICK-NEXT
 const CustomPrevArrow = (props: any) => {
@@ -59,7 +62,7 @@ interface Props {
 	imagesAlt: string[]
 }
 const ImageSlider = ({ images, imagesAlt }: Props) => {
-	const sliderRef = useRef<Slider>(null)
+	const sliderRef = useRef<SliderRef>(null)
 	const settings = {
 		dots: true,
 		infinite: true,

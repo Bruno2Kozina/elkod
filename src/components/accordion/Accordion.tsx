@@ -1,3 +1,4 @@
+'use client'
 import { useState } from 'react'
 import { Container, Content, LI, Title } from './Accordion.style'
 import { PlusIcon } from 'icons/PlusIcon'
