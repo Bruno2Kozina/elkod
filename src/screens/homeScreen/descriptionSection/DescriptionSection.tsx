@@ -56,13 +56,12 @@ export const DescriptionSection = ({ scrollRef }: Props) => {
 					Nakon dugogodišnjeg iskustva u području elektronike, ELKOD je razvio i započeo vlastitu proizvodnju limitatora nivoa zvuka, uređaja koji su
 					nastali kao odgovor na zahtjeve i potrebe za ispunjavanjem minimalnih tehničkih uvjeta u ugostiteljskim objektima. Naši limitatori izrađeni
 					su u skladu s važećim CE normama i tehničkim propisima, te udovoljavaju svim zahtjevima vezanim uz kontrolu i ograničenje razine zvuka u
-					skladu s propisanim granicama. Zahvaljujući vlastitom razvoju i proizvodnji, ELKODovi limitatori odlikuju se pouzdanom funkcionalnošću,
+					skladu s propisanim granicama. Zahvaljujući vlastitom razvoju i proizvodnji, limitatori zvuka ELKOD odlikuju se pouzdanom funkcionalnošću,
 					jednostavnom instalacijom i dugotrajnim radom. Uređaji su konstruirani tako da osiguraju stabilnu i točnu regulaciju razine zvuka, bez
 					narušavanja kvalitete audio signala. Limitatori su namijenjeni za restorane, hotele, barove, noćne klubove, kao i za koncertne prostore te
 					druge objekte u kojima je potrebno kontrolirati razinu buke. U ponudi su tri modela limitatora, prilagođena različitim tipovima prostora i
-					tehničkim zahtjevima korisnika. Zahvaljujući kvaliteti izrade i pouzdanosti u radu, ELKODovi limitatori nivoa zvuka uspješno se izvoze i u
-					susjedne države, gdje su prepoznati kao praktično i učinkovito rješenje za nadzor i ograničenje razine zvuka u ugostiteljstvu i zabavnoj
-					industriji.
+					tehničkim zahtjevima korisnika. Zahvaljujući kvaliteti izrade i pouzdanosti u radu, limitatori zvuka ELKOD uspješno se izvoze i u susjedne
+					države, gdje su prepoznati kao praktično i učinkovito rješenje za nadzor i ograničenje razine zvuka u ugostiteljstvu i zabavnoj industriji.
 				</p>
 			</MainDescription>
 			<MainContentContainer>

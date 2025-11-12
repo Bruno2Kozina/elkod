@@ -23,8 +23,8 @@ export const HeroSection = ({ handleScroll }: Props) => {
 							ELKOD Limitatori - <br /> Kontrola zvuka na najvišoj razini!
 						</H1>
 						<HeroDesc>
-							Naši limitatori buke koriste se u klubovima, restoranima i poslovnim prostorima kako bi spriječili preglasnu reprodukciju. Certificirana
-							tehnologija osigurava sigurnost, kvalitetu i poštivanje zakonskih regulativa.
+							Naši limitatori nivoa zvuka koriste se u klubovima, restoranima i poslovnim prostorima kako bi spriječili preglasnu reprodukciju.
+							Certificirana tehnologija osigurava sigurnost, kvalitetu i poštivanje zakonskih regulativa.
 						</HeroDesc>
 					</TitleDescContainer>
 					<Link href={''}>

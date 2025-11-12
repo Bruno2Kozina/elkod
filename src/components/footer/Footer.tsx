@@ -25,7 +25,7 @@ export default function Footer() {
 						<RightSection>
 							<RightBox>
 								<BoxWrapper>
-									<p style={{ fontWeight: 600 }}>ELKOD - obrt za elektrotehniku</p>
+									<p style={{ fontWeight: 600 }}>ELKOD - obrt za elektroniku</p>
 									<p>ULICA SV. MIHOVILA 28</p>
 									<p>21240 Trilj</p>
 									<p>OIB: 05532514124</p>
