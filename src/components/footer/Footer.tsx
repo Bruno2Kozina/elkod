@@ -35,7 +35,6 @@ export default function Footer() {
 								<BoxWrapper>
 									<p>Žiro račun: IBAN: HR2924070001100605957</p>
 									<p>Otvoren kod OTP banka Hrvatska d.d.</p>
-									<p>Trgovački sud u Splitu</p>
 									<p>Vl. Damir Kozina dipl. ing</p>
 								</BoxWrapper>
 							</RightBox>
