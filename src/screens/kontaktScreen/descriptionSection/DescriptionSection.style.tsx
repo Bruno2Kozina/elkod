@@ -56,8 +56,14 @@ export const ContactSingleInfo = styled.div`
 	align-items: center;
 	gap: 12px;
 
-	span {
+	span,
+	a {
 		color: #7a7a7a;
 		font-size: 16px;
+		text-decoration: none;
+	}
+
+	a:hover {
+		color: #196b7b;
 	}
 `

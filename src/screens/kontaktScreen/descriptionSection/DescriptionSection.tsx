@@ -17,11 +17,11 @@ export const DescriptionSection = () => {
 						<h3>email</h3>
 						<ContactSingleInfo>
 							<MailIcon />
-							<span>damir.kozina@st.t‐com.hr</span>
+							<a href="mailto:damir.kozina@st.t-com.hr">damir.kozina@st.t-com.hr</a>
 						</ContactSingleInfo>
 						<ContactSingleInfo>
 							<MailIcon />
-							<span>damirkozina11@gmail.com</span>
+							<a href="mailto:damirkozina11@gmail.com">damirkozina11@gmail.com</a>
 						</ContactSingleInfo>
 					</SingleData>
 				</DescriptionContainer>

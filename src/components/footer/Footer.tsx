@@ -9,9 +9,11 @@ import {
 	Separator,
 	BottomFooter,
 	ContentContainer,
-	LogoWrapper
+	LogoWrapper,
+	LegalLinks
 } from './Footer.style'
 import { LogoElkod } from 'icons'
+import Link from 'next/link'
 
 export default function Footer() {
 	return (
@@ -44,6 +46,10 @@ export default function Footer() {
 				<Separator />
 				<BottomFooter>
 					<p>Copyright © 2025 ELKOD</p>
+					<LegalLinks>
+						<Link href="/politika-privatnosti">Politika privatnosti</Link>
+						<Link href="/kolacici">Politika kolačića</Link>
+					</LegalLinks>
 				</BottomFooter>
 			</ContentContainer>
 		</MainContainer>

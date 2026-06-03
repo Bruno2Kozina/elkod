@@ -20,7 +20,6 @@ import { useScreenSize } from 'hooks'
 import { ArrowRightIcon, CloseIcon, HamburgerMenuIcon, MailIcon } from 'icons'
 import { useEffect, useState } from 'react'
 import linkedInIcon from 'public/icons/LinkedIn.svg'
-import euLogo from 'public/icons/euLogo.svg'
 import { LogoElkod } from 'icons'
 
 export default function Navbar() {
@@ -113,10 +112,6 @@ export default function Navbar() {
 								<ContactSingleInfo>
 									<Image src={linkedInIcon} alt="LinkedInIcon" />
 									<p>ELKOD</p>
-								</ContactSingleInfo>
-								<ContactSingleInfo>
-									<Image src={euLogo} alt="euLogo" />
-									<p>EU based</p>
 								</ContactSingleInfo>
 							</BottomWrapper>
 						</FooterContainer>

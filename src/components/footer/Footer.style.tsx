@@ -71,10 +71,37 @@ export const Separator = styled.span`
 
 export const BottomFooter = styled.div`
 	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 24px;
 	padding: 0 164px 40px;
 	font-size: 14px;
 	@media ${devices.laptop} {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 16px;
 		padding: 40px 24px 64px;
+	}
+`
+
+export const LegalLinks = styled.div`
+	display: flex;
+	gap: 24px;
+
+	a {
+		color: inherit;
+		text-decoration: none;
+		letter-spacing: 1px;
+	}
+
+	a:hover {
+		color: #196b7b;
+		text-decoration: underline;
+	}
+
+	@media ${devices.laptop} {
+		flex-direction: column;
+		gap: 12px;
 	}
 `
 

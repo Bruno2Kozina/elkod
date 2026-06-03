@@ -5,6 +5,7 @@ import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 import Navbar from 'components/navbar/Navbar'
 import Footer from 'components/footer/Footer'
+import { CookieConsent } from 'components/cookieConsent'
 
 const SpaceGrotesk = Space_Grotesk({
 	subsets: ['latin'],
@@ -68,11 +69,12 @@ export default function RootLayout({
 	children: React.ReactNode
 }>) {
 	return (
-		<html lang="en" className={SpaceGrotesk.className}>
+		<html lang="hr" className={SpaceGrotesk.className}>
 			<body>
 				<Navbar />
 				<div>{children}</div>
 				<Footer />
+				<CookieConsent />
 			</body>
 		</html>
 	)
